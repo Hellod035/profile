@@ -68,7 +68,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
 }
 .links a { white-space: nowrap; }
-.links .wechat { white-space: nowrap; color: var(--muted); }
+.links .wechat { white-space: nowrap; }
 .links .sep { color: #bbb; padding: 0 6px; }
 
 .portrait {

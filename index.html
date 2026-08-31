@@ -46,7 +46,7 @@
         <a href="#">Google Scholar</a><!-- TODO: Scholar profile URL --><span class="sep">/</span>
         <a href="https://github.com/Hellod035">GitHub</a><span class="sep">/</span>
         <a href="https://space.bilibili.com/220733310">Bilibili</a><span class="sep">/</span>
-        <span class="wechat">WeChat: 18845167915</span>
+        <a class="wechat" href="#" data-wechat="18845167915" title="Click to copy">WeChat</a>
       </p>
     </div>
     <div class="portrait">
@@ -459,6 +459,24 @@
     }, { threshold: 0.2 });
     document.querySelectorAll('video[data-src]').forEach(function (v) { io.observe(v); });
   }
+
+  // WeChat ID: copy to clipboard, with the id itself as the fallback.
+  document.querySelectorAll('a.wechat').forEach(function (a) {
+    var label = a.textContent;
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = a.dataset.wechat;
+      var done = function () {
+        a.textContent = 'Copied: ' + id;
+        setTimeout(function () { a.textContent = label; }, 2000);
+      };
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(id).then(done, function () { a.textContent = id; });
+      } else {
+        a.textContent = id;
+      }
+    });
+  });
 
   // BibTeX toggles.
   document.querySelectorAll('.bib-toggle').forEach(function (t) {
