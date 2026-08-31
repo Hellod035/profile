@@ -42,11 +42,11 @@
         </p>
       </div>
       <p class="links">
-        <a href="mailto:24b908020@stu.hit.edu.cn">Email</a><span class="sep">/</span>
+        <a class="copy-link" href="mailto:24b908020@stu.hit.edu.cn" data-copy="24b908020@stu.hit.edu.cn" title="Click to copy">Email</a><span class="sep">/</span>
         <a href="#">Google Scholar</a><!-- TODO: Scholar profile URL --><span class="sep">/</span>
         <a href="https://github.com/Hellod035">GitHub</a><span class="sep">/</span>
         <a href="https://space.bilibili.com/220733310">Bilibili</a><span class="sep">/</span>
-        <a class="wechat" href="#" data-wechat="18845167915" title="Click to copy">WeChat</a>
+        <a class="copy-link wechat" href="#" data-copy="18845167915" title="Click to copy">WeChat</a>
       </p>
     </div>
     <div class="portrait">
@@ -460,20 +460,21 @@
     document.querySelectorAll('video[data-src]').forEach(function (v) { io.observe(v); });
   }
 
-  // WeChat ID: copy to clipboard, with the id itself as the fallback.
-  document.querySelectorAll('a.wechat').forEach(function (a) {
+  // Contact links copy their address instead of navigating; without clipboard
+  // access they fall back to revealing it.
+  document.querySelectorAll('a.copy-link').forEach(function (a) {
     var label = a.textContent;
     a.addEventListener('click', function (e) {
       e.preventDefault();
-      var id = a.dataset.wechat;
-      var done = function () {
-        a.textContent = 'Copied: ' + id;
-        setTimeout(function () { a.textContent = label; }, 2000);
-      };
+      var value = a.dataset.copy;
+      var reveal = function () { a.textContent = value; };
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(id).then(done, function () { a.textContent = id; });
+        navigator.clipboard.writeText(value).then(function () {
+          a.textContent = 'Copied: ' + value;
+          setTimeout(function () { a.textContent = label; }, 2000);
+        }, reveal);
       } else {
-        a.textContent = id;
+        reveal();
       }
     });
   });
