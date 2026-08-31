@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wandong (Jim) Sun</title>
+  <meta name="author" content="Wandong Sun">
+  <meta name="description" content="Wandong (Jim) Sun, PhD student at Harbin Institute of Technology working on humanoid locomotion and loco-manipulation with reinforcement learning. Author of LeggedLab.">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- TODO: favicon (e.g. images/favicon.ico) -->
+</head>
+<body>
+<div class="page">
+
+  <!-- ============ header ============ -->
+  <div class="header">
+    <div class="header-text">
+      <h1 class="name">Wandong (Jim) Sun<span class="zh">孙万东</span></h1>
+      <p class="tagline">Humanoid locomotion &amp; loco-manipulation · Robot learning</p>
+      <div class="bio">
+        <p>
+          I am a final-year PhD student at Harbin Institute of Technology,
+          advised by Prof. Zongwu Xie.
+          I make humanoid robots learn to walk, see, and work in the real world.
+        </p>
+        <p>
+          I am currently with the HONOR Robotics team as a core contributor to its
+          humanoid robots, which debuted at MWC 2026 in Barcelona, won the 2026 humanoid
+          half-marathon, and broke three human world records at the 2026 World Humanoid
+          Robot Games.
+        </p>
+        <p>
+          I also created
+          <a href="#software">LeggedLab</a>, an open-source
+          RL workflow for legged robots.
+        </p>
+        <p class="jobmarket">
+          Collaborations and conversations are warmly welcome.
+        </p>
+      </div>
+      <p class="links">
+        <a href="mailto:TODO@honor.com">Email</a><!-- TODO: replace with actual company email address --><span class="sep">/</span>
+        <a href="#">Google Scholar</a><!-- TODO: Scholar profile URL --><span class="sep">/</span>
+        <a href="https://github.com/Hellod035">GitHub</a><span class="sep">/</span>
+        <a href="https://space.bilibili.com/220733310">Bilibili</a>
+      </p>
+    </div>
+    <div class="portrait">
+      <img src="assets/images/wandong.jpg" alt="Portrait of Wandong Sun">
+    </div>
+  </div>
+
+  <!-- ============ highlights ============ -->
+  <section id="highlights">
+    <h2>Highlights</h2>
+    <div class="highlights-grid">
+      <a class="highlight-card" href="#pub-ulc">
+        <figure style="margin:0">
+          <video muted loop playsinline preload="none"
+                 data-src="https://hellod035.github.io/ULC/static/videos/pick_doll.mp4"></video>
+          <figcaption>Unified humanoid loco-manipulation · ULC</figcaption>
+        </figure>
+      </a>
+      <a class="highlight-card" href="#pub-nyst">
+        <figure style="margin:0">
+          <video muted loop playsinline preload="none"
+                 data-src="assets/videos/nyst_upstair.mp4"></video>
+          <figcaption>End-to-end humanoid locomotion from raw pixels · Now You See That (RSS 2026)</figcaption>
+        </figure>
+      </a>
+      <a class="highlight-card" href="#projects">
+        <figure style="margin:0">
+          <video muted loop playsinline preload="none"
+                 data-src="assets/videos/halfmarathon_finish.mp4"></video>
+          <figcaption>Champion of the 2026 Humanoid Robot Half-Marathon (HONOR <em>Lightning</em>)</figcaption>
+        </figure>
+      </a>
+      <a class="highlight-card" href="#projects">
+        <figure style="margin:0">
+          <video muted loop playsinline preload="none"
+                 data-src="assets/videos/sprint100_finish.mp4"></video>
+          <figcaption>Human 100&nbsp;m, 400&nbsp;m and 1500&nbsp;m records broken at the 2026 World Humanoid Robot Games</figcaption>
+        </figure>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ news ============ -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <!-- TODO: confirm exact months for entries marked below -->
+      <li><span class="news-date">[08/2026]</span><span>HONOR's humanoid robots break the human 100&nbsp;m, 400&nbsp;m and 1500&nbsp;m world records at the <a href="#projects">2026 World Humanoid Robot Games</a>.</span></li>
+      <li><span class="news-date">[04/2026]</span><span><em>Lightning</em> wins the <a href="#projects">2026 Beijing E-Town Humanoid Robot Half-Marathon</a>: 21&nbsp;km fully autonomous in 50:26, breaking the human half-marathon world record.</span></li>
+      <li><span class="news-date">[04/2026]</span><span><a href="#pub-nyst"><em>Now You See That</em></a> is accepted to <strong>RSS 2026</strong>!<!-- TODO: confirm month --></span></li>
+      <li><span class="news-date">[03/2026]</span><span>The perceptive terrain traversal behind <em>Now You See That</em> stars in an <a href="#projects">official HONOR film</a>.</span></li>
+      <li><span class="news-date">[03/2026]</span><span>HONOR unveils its first humanoid robot at <a href="#projects">MWC 2026 in Barcelona</a>.</span></li>
+      <li><span class="news-date">[02/2026]</span><span><a href="#pub-nyst"><em>Now You See That</em></a>, end-to-end humanoid locomotion from raw pixels, is released on arXiv with a project page.</span></li>
+      <li><span class="news-date">[01/2026]</span><span><a href="#pub-cola"><em>CoLA-Flow Policy</em></a> is accepted to <strong>RA-L 2026</strong>.<!-- TODO: confirm month --></span></li>
+      <li><span class="news-date">[07/2025]</span><span><a href="#pub-ulc"><em>ULC</em></a>, a unified fine-grained controller for humanoid loco-manipulation, is released on arXiv with a project page.</span></li>
+      <li><span class="news-date">[06/2025]</span><span><a href="#pub-perceptive"><em>Learning Perceptive Humanoid Locomotion over Challenging Terrain</em></a> is accepted to <strong>IROS 2025</strong>.<!-- TODO: confirm month --></span></li>
+      <li><span class="news-date">[03/2025]</span><span><a href="#software">LeggedLab</a> is fully open-sourced: now <strong>600+ GitHub stars</strong> and verified on real Unitree G1/H1.</span></li>
+      <li><span class="news-date">[03/2025]</span><span><a href="#pub-perceptive">Perceptive humanoid locomotion over challenging terrain</a> is on arXiv: 2&nbsp;km of continuous real-world terrain without intervention.</span></li>
+      <li><span class="news-date">[02/2025]</span><span><a href="#pub-wmr"><em>World Model Reconstruction</em></a> for blind humanoid locomotion is on arXiv, including a 3.2&nbsp;km snowfield hike.</span></li>
+      <!-- TODO: add HONOR Robotics joining date, invited talks, media coverage if any -->
+    </ul>
+  </section>
+
+  <!-- ============ industry projects ============ -->
+  <section id="projects">
+    <h2>Industry Projects</h2>
+    <!-- TODO: replace placeholder thumbs with official footage stills / video clips -->
+    <div class="pub">
+      <div class="pub-thumb"><video muted loop playsinline preload="none" data-src="assets/videos/sprint100_finish.mp4"></video></div>
+      <div class="pub-body">
+        <span class="pub-title">Human 100&nbsp;m, 400&nbsp;m and 1500&nbsp;m records broken at the 2026 World Humanoid Robot Games</span>
+        <p class="pub-venue"><span class="venue-badge">Beijing · 08/2026</span></p>
+        <p class="pub-tldr">At the 2026 World Humanoid Robot Games (666 teams from 16 countries), HONOR's humanoid robots broke the human world records for the 100&nbsp;m (8.94&nbsp;s), 400&nbsp;m (39.45&nbsp;s) and 1500&nbsp;m (2:30.22), reaching a top speed of 14.5&nbsp;m/s.</p>
+        <p class="pub-links">
+          <a href="https://www.news.cn/sports/20260824/f6eaa13b7b434f2cb47134e34cb606ae/c.html">Xinhua</a><span class="sep">/</span>
+          <a href="https://www.jiemian.com/article/14971204.html">Jiemian</a><span class="sep">/</span>
+          <a href="https://www.honor.com/cn/robot/robot-games/">HONOR official page</a><span class="sep">/</span>
+          <a href="https://www.bilibili.com/video/BV1638h6cEx2/">official video</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb"><video muted loop playsinline preload="none" data-src="assets/videos/halfmarathon_finish.mp4"></video></div>
+      <div class="pub-body">
+        <span class="pub-title">Champion of the 2026 Beijing E-Town Humanoid Robot Half-Marathon</span>
+        <p class="pub-venue"><span class="venue-badge">Beijing · 04/2026</span></p>
+        <p class="pub-tldr"><em>Lightning</em> won the humanoid half-marathon: 21.0975&nbsp;km fully autonomously in a net 50:26, breaking the human half-marathon world record, with HONOR robots sweeping the top six places.</p>
+        <p class="pub-links">
+          <a href="https://www.news.cn/sports/20260419/c91172da5ef84342b7b07fb3c2ef8f12/c.html">Xinhua</a><span class="sep">/</span>
+          <a href="https://en.people.cn/n3/2026/0427/c98649-20450883.html">People's Daily</a><span class="sep">/</span>
+          <a href="https://www.sixthtone.com/news/1018442/chinese-robot-runner-beats-mens-half-marathon-world-record">Sixth Tone</a><span class="sep">/</span>
+          <a href="https://www.honor.com/cn/activity/honor-robot/">HONOR official page</a><span class="sep">/</span>
+          <a href="https://www.bilibili.com/video/BV1MZd9BzEmF/">CCTV video</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/mwc_dance.jpg" alt="HONOR humanoid robot dancing on the MWC 2026 stage"></div>
+      <div class="pub-body">
+        <span class="pub-title">HONOR's first humanoid robot unveiled at MWC 2026, Barcelona</span>
+        <p class="pub-venue"><span class="venue-badge">Barcelona · 03/2026</span></p>
+        <p class="pub-tldr">HONOR became the first smartphone maker to enter consumer humanoid robotics. On the MWC keynote stage the robot danced with human performers, moonwalked, backflipped, and runs at up to 4&nbsp;m/s.</p>
+        <p class="pub-links">
+          <a href="https://www3.xinhuanet.com/tech/20260305/46fa113683e448be86d610f3d2bad889/c.html">Xinhua</a><span class="sep">/</span>
+          <a href="https://interestingengineering.com/ai-robotics/honor-humanoid-robot-mwc">Interesting Engineering</a><span class="sep">/</span>
+          <a href="https://www.prnewswire.com/news-releases/honor-advances-its-ai-vision-at-mwc-2026-with-robot-phone-humanoid-robot-and-magic-v6-302701902.html">HONOR press release</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb"><video muted loop playsinline preload="none" data-src="assets/videos/stairfilm_clip.mp4"></video></div>
+      <div class="pub-body">
+        <span class="pub-title">Perception-driven terrain traversal in an official HONOR film</span>
+        <p class="pub-venue"><span class="venue-badge">Shenzhen · 03/2026</span></p>
+        <p class="pub-tldr">Official HONOR film featuring perception-driven traversal of rubble, stairs, and obstacles, powered by the vision-based locomotion research behind <a href="#pub-nyst"><em>Now You See That</em></a>.</p>
+        <p class="pub-links">
+          <a href="https://www.bilibili.com/video/BV1ApcXzGEkP/">watch on Bilibili</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ publications ============ -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <!-- ---- EATR-Stereo ---- -->
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/eatr_fig1.jpg" alt="EATR-Stereo"></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://arxiv.org/abs/2608.17453">EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control</a>
+        <p class="pub-authors">Songwei Wu, Rui Zhao, Fan Yang, Zhongqiang Nie, Zhiduo Jiang, <span class="me">Wandong Sun</span>, Yuwei Li, Jian Hu, Yang Liu, Hong Liu</p>
+        <p class="pub-venue"><span class="venue-badge">arXiv 2026</span></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2608.17453">arXiv</a><span class="sep">/</span><span class="bib-toggle" data-bib="bib-eatr">bibtex</span></p>
+        <pre class="bibtex" id="bib-eatr">@article{wu2026eatrstereo,
+  title   = {EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control},
+  author  = {Wu, Songwei and Zhao, Rui and Yang, Fan and Nie, Zhongqiang and Jiang, Zhiduo and Sun, Wandong and Li, Yuwei and Hu, Jian and Liu, Yang and Liu, Hong},
+  journal = {arXiv preprint arXiv:2608.17453},
+  year    = {2026}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- Now You See That ---- -->
+    <div class="pub selected" id="pub-nyst">
+      <div class="pub-thumb">
+        <video muted loop playsinline preload="none"
+               data-src="https://hellod035.github.io/Now_You_See_That/web/static/videos/multi_scene_parkour_1.mp4"></video>
+      </div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://hellod035.github.io/Now_You_See_That/">Now You See That: Learning End-to-End Humanoid Locomotion from Raw Pixels</a>
+        <p class="pub-authors"><span class="me">Wandong Sun</span>*, Yongbo Su*, Leoric Huang*, Alex Zhang, Dwyane Wei, Mu San, Daniel Tian, Ellie Cao, Baoshi Cao, Yang Liu, Finn Yan, Ethan Xie, Zongwu Xie</p>
+        <p class="pub-venue"><span class="venue-badge">RSS 2026</span></p>
+        <p class="pub-links">
+          <a href="https://hellod035.github.io/Now_You_See_That/">project page</a><span class="sep">/</span>
+          <a href="https://arxiv.org/abs/2602.06382">arXiv</a><span class="sep">/</span>
+          <a href="https://github.com/Hellod035/Now_You_See_That">code</a><span class="sep">/</span>
+          <a href="https://youtube.com/shorts/hC3Otwjjil8">video</a><span class="sep">/</span>
+          <span class="bib-toggle" data-bib="bib-nyst">bibtex</span>
+        </p>
+        <p class="pub-tldr">High-fidelity depth-camera simulation, vision-aware behavior distillation, and multi-critic rewards let a humanoid climb stairs, cross gaps, and walk over rubble, end-to-end from raw pixels.</p>
+        <pre class="bibtex" id="bib-nyst">@article{sun2026nowyouseethat,
+  title   = {Now You See That: Learning End-to-End Humanoid Locomotion from Raw Pixels},
+  author  = {Sun, Wandong and Su, Yongbo and Huang, Leoric and et al.},
+  journal = {arXiv preprint arXiv:2602.06382},
+  year    = {2026}
+}</pre><!-- TODO: replace with official RSS 2026 bibtex once available -->
+      </div>
+    </div>
+
+    <!-- ---- CoLA-Flow ---- -->
+    <div class="pub selected" id="pub-cola">
+      <div class="pub-thumb"><img src="assets/images/colaflow_arch.jpg" alt="CoLA-Flow Policy"></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://arxiv.org/abs/2601.23087">CoLA-Flow Policy: Temporally Coherent Imitation Learning via Continuous Latent Action Flow Matching for Robotic Manipulation</a>
+        <p class="pub-authors">Songwei Wu, Zhiduo Jiang, <span class="me">Wandong Sun</span>, Guanghu Xie, Rui Zhao, Hong Liu, Yang Liu</p>
+        <p class="pub-venue"><span class="venue-badge">RA-L 2026</span></p>
+        <p class="pub-links"><a href="https://arxiv.org/abs/2601.23087">arXiv</a><span class="sep">/</span><a href="https://doi.org/10.1109/LRA.2026.3710367">IEEE</a><span class="sep">/</span><span class="bib-toggle" data-bib="bib-cola">bibtex</span></p>
+        <pre class="bibtex" id="bib-cola">@article{wu2026colaflow,
+  title   = {CoLA-Flow Policy: Temporally Coherent Imitation Learning via Continuous Latent Action Flow Matching for Robotic Manipulation},
+  author  = {Wu, Songwei and Jiang, Zhiduo and Sun, Wandong and Xie, Guanghu and Zhao, Rui and Liu, Hong and Liu, Yang},
+  journal = {IEEE Robotics and Automation Letters},
+  year    = {2026},
+  doi     = {10.1109/LRA.2026.3710367}
+}</pre><!-- TODO: add volume/number/pages once assigned -->
+      </div>
+    </div>
+
+    <!-- ---- Dynamic Task-Scaling (TIE 2026) ---- -->
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/taskscaling_fig.jpg" alt="Dynamic Task-Scaling framework"></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1109/TIE.2025.3610739">Achieving Safety-Aware and Efficient Robot Motion via Dynamic Task-Scaling: From the Null-Space Control Perspective</a>
+        <p class="pub-authors">Xiaokai Zhou, Boyu Ma, Baoshi Cao, Yang Liu, <span class="me">Wandong Sun</span>, Jianfei Yang, Zongwu Xie</p>
+        <p class="pub-venue"><span class="venue-badge">IEEE TIE 2026</span></p>
+        <p class="pub-links"><a href="https://doi.org/10.1109/TIE.2025.3610739">IEEE</a><span class="sep">/</span><span class="bib-toggle" data-bib="bib-task">bibtex</span></p>
+        <pre class="bibtex" id="bib-task">@article{zhou2026taskscaling,
+  title   = {Achieving Safety-Aware and Efficient Robot Motion via Dynamic Task-Scaling: From the Null-Space Control Perspective},
+  author  = {Zhou, Xiaokai and Ma, Boyu and Cao, Baoshi and Liu, Yang and Sun, Wandong and Yang, Jianfei and Xie, Zongwu},
+  journal = {IEEE Transactions on Industrial Electronics},
+  volume  = {73},
+  number  = {4},
+  pages   = {5734--5745},
+  year    = {2026},
+  doi     = {10.1109/TIE.2025.3610739}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- ULC ---- -->
+    <div class="pub selected" id="pub-ulc">
+      <div class="pub-thumb">
+        <video muted loop playsinline preload="none"
+               data-src="https://hellod035.github.io/ULC/static/videos/pick_doll.mp4"></video>
+      </div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://hellod035.github.io/ULC/">ULC: A Unified and Fine-Grained Controller for Humanoid Loco-Manipulation</a>
+        <p class="pub-authors"><span class="me">Wandong Sun</span>, Luying Feng, Baoshi Cao, Yang Liu, Yaochu Jin, Zongwu Xie</p>
+        <p class="pub-venue"><span class="venue-badge">arXiv 2025</span><!-- TODO: update venue if accepted somewhere --></p>
+        <p class="pub-links">
+          <a href="https://hellod035.github.io/ULC/">project page</a><span class="sep">/</span>
+          <a href="https://arxiv.org/abs/2507.06905">arXiv</a><span class="sep">/</span>
+          <a href="https://github.com/Hellod035/ULC">code</a><span class="sep">/</span>
+          <span class="bib-toggle" data-bib="bib-ulc">bibtex</span>
+        </p>
+        <p class="pub-tldr">A single unified policy delivers fine-grained loco-manipulation control (sequential skill acquisition, residual action modeling, and CoM tracking), outperforming hierarchical decompositions on a real Unitree G1.</p>
+        <pre class="bibtex" id="bib-ulc">@article{sun2025ulc,
+  title   = {ULC: A Unified and Fine-Grained Controller for Humanoid Loco-Manipulation},
+  author  = {Sun, Wandong and Feng, Luying and Cao, Baoshi and Liu, Yang and Jin, Yaochu and Xie, Zongwu},
+  journal = {arXiv preprint arXiv:2507.06905},
+  year    = {2025}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- Enhancing Safety (RA-L 2025) ---- -->
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/ral2025_fig.jpg" alt="Accelerated motion generation framework"></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1109/LRA.2025.3579633">Enhancing Safety and Manipulability of Redundant Manipulators: Accelerated Motion Generation in Dynamic Environments</a>
+        <p class="pub-authors">Zongwu Xie, Mengfei Li, <span class="me">Wandong Sun</span>, Baoshi Cao, Yang Liu, Zhengpu Wang, Yiming Ji, Hong Liu, Boyu Ma, Zhihong Wu</p>
+        <p class="pub-venue"><span class="venue-badge">RA-L 2025</span></p>
+        <p class="pub-links"><a href="https://doi.org/10.1109/LRA.2025.3579633">IEEE</a><span class="sep">/</span><span class="bib-toggle" data-bib="bib-enh">bibtex</span></p>
+        <pre class="bibtex" id="bib-enh">@article{xie2025enhancing,
+  title   = {Enhancing Safety and Manipulability of Redundant Manipulators: Accelerated Motion Generation in Dynamic Environments},
+  author  = {Xie, Zongwu and Li, Mengfei and Sun, Wandong and Cao, Baoshi and Liu, Yang and Wang, Zhengpu and Ji, Yiming and Liu, Hong and Ma, Boyu and Wu, Zhihong},
+  journal = {IEEE Robotics and Automation Letters},
+  volume  = {10},
+  number  = {9},
+  pages   = {8642--8649},
+  year    = {2025},
+  doi     = {10.1109/LRA.2025.3579633}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- Perceptive Locomotion (IROS 2025) ---- -->
+    <div class="pub selected" id="pub-perceptive">
+      <div class="pub-thumb">
+        <img src="assets/images/perceptive_teaser.jpg" alt="Perceptive humanoid locomotion teaser">
+      </div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://arxiv.org/abs/2503.00692">Learning Perceptive Humanoid Locomotion over Challenging Terrain</a>
+        <p class="pub-authors"><span class="me">Wandong Sun</span>, Baoshi Cao, Long Chen, Yongbo Su, Yang Liu, Zongwu Xie, Hong Liu</p>
+        <p class="pub-venue"><span class="venue-badge">IROS 2025</span></p>
+        <p class="pub-links">
+          <a href="https://arxiv.org/abs/2503.00692">arXiv</a><span class="sep">/</span>
+          <a href="https://doi.org/10.1109/IROS60139.2025.11247685">IEEE</a><span class="sep">/</span>
+          <span class="bib-toggle" data-bib="bib-perceptive">bibtex</span>
+          <!-- TODO: project page / video links if available -->
+        </p>
+        <p class="pub-tldr">Teacher-student distillation with world modeling and sensor denoising enables humanoid traversal of challenging terrain under noisy exteroception: 2&nbsp;km of continuous real-world terrain without intervention.</p>
+        <pre class="bibtex" id="bib-perceptive">@inproceedings{sun2025perceptive,
+  title     = {Learning Perceptive Humanoid Locomotion over Challenging Terrain},
+  author    = {Sun, Wandong and Cao, Baoshi and Chen, Long and Su, Yongbo and Liu, Yang and Xie, Zongwu and Liu, Hong},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year      = {2025}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- WMR ---- -->
+    <div class="pub selected" id="pub-wmr">
+      <div class="pub-thumb">
+        <img src="assets/images/wmr_method.jpg" alt="World Model Reconstruction teaser">
+      </div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://arxiv.org/abs/2502.16230">Learning Humanoid Locomotion with World Model Reconstruction</a>
+        <p class="pub-authors"><span class="me">Wandong Sun</span>, Long Chen, Yongbo Su, Baoshi Cao, Yang Liu, Zongwu Xie</p>
+        <p class="pub-venue"><span class="venue-badge">arXiv 2025</span><!-- TODO: update venue if accepted somewhere --></p>
+        <p class="pub-links">
+          <a href="https://arxiv.org/abs/2502.16230">arXiv</a><span class="sep">/</span>
+          <span class="bib-toggle" data-bib="bib-wmr">bibtex</span>
+        </p>
+        <p class="pub-tldr">An estimator that reconstructs world-state information guides a blind locomotion policy across snow, ice, and deformable ground, including a 3.2&nbsp;km snowfield hike with zero human intervention.</p>
+        <pre class="bibtex" id="bib-wmr">@article{sun2025wmr,
+  title   = {Learning Humanoid Locomotion with World Model Reconstruction},
+  author  = {Sun, Wandong and Chen, Long and Su, Yongbo and Cao, Baoshi and Liu, Yang and Xie, Zongwu},
+  journal = {arXiv preprint arXiv:2502.16230},
+  year    = {2025}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- Motion Generation Around Obstacles (TIE 2025) ---- -->
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/tie2025_fig.jpg" alt="Sampling-based planner trajectories"></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1109/TIE.2025.3539387">Motion Generation Around Obstacles: A Multidimensional Sampling-Based Planner</a>
+        <p class="pub-authors">Zongwu Xie, Zhengpu Wang, Baoshi Cao, Yang Liu, <span class="me">Wandong Sun</span>, Guanghu Xie, Yiming Ji, Boyu Ma</p>
+        <p class="pub-venue"><span class="venue-badge">IEEE TIE 2025</span></p>
+        <p class="pub-links"><a href="https://doi.org/10.1109/TIE.2025.3539387">IEEE</a><span class="sep">/</span><span class="bib-toggle" data-bib="bib-obs">bibtex</span></p>
+        <pre class="bibtex" id="bib-obs">@article{xie2025motion,
+  title   = {Motion Generation Around Obstacles: A Multidimensional Sampling-Based Planner},
+  author  = {Xie, Zongwu and Wang, Zhengpu and Cao, Baoshi and Liu, Yang and Sun, Wandong and Xie, Guanghu and Ji, Yiming and Ma, Boyu},
+  journal = {IEEE Transactions on Industrial Electronics},
+  volume  = {72},
+  number  = {9},
+  pages   = {9314--9322},
+  year    = {2025},
+  doi     = {10.1109/TIE.2025.3539387}
+}</pre>
+      </div>
+    </div>
+
+    <!-- ---- Collision-Free Scheme (ICIRA 2024) ---- -->
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/icira2024_fig.jpg" alt="Collision-free scheme simulation"></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1007/978-981-96-0795-2_3">A General Collision-Free Scheme for Redundant Manipulators</a>
+        <p class="pub-authors">Zongwu Xie, <span class="me">Wandong Sun</span>, Baoshi Cao, Yang Liu, Zhengpu Wang, Hong Liu, Boyu Ma</p>
+        <p class="pub-venue"><span class="venue-badge">ICIRA 2024</span></p>
+        <p class="pub-links"><a href="https://doi.org/10.1007/978-981-96-0795-2_3">Springer</a><span class="sep">/</span><span class="bib-toggle" data-bib="bib-icira">bibtex</span></p>
+        <pre class="bibtex" id="bib-icira">@inproceedings{xie2024collisionfree,
+  title     = {A General Collision-Free Scheme for Redundant Manipulators},
+  author    = {Xie, Zongwu and Sun, Wandong and Cao, Baoshi and Liu, Yang and Wang, Zhengpu and Liu, Hong and Ma, Boyu},
+  booktitle = {Intelligent Robotics and Applications (ICIRA 2024)},
+  series    = {Lecture Notes in Artificial Intelligence},
+  volume    = {15203},
+  pages     = {31--44},
+  publisher = {Springer},
+  year      = {2025},
+  doi       = {10.1007/978-981-96-0795-2_3}
+}</pre>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ open-source software ============ -->
+  <section id="software">
+    <h2>Open-Source Software</h2>
+
+    <div class="sw">
+      <span class="sw-name"><a href="https://github.com/Hellod035/LeggedLab">LeggedLab</a></span>
+      <span class="sw-badges">
+        <img src="https://img.shields.io/github/stars/Hellod035/LeggedLab?style=social" alt="LeggedLab GitHub stars">
+      </span>
+      <p class="sw-desc">A direct IsaacLab workflow for legged robots: transparent, easy to modify, and independent of the Isaac Lab core: train in Isaac Sim, deploy on real Unitree G1/H1. Widely used as training infrastructure by the legged-robot RL community.<!-- TODO: add notable users/downstream projects if known --></p>
+    </div>
+
+    <div class="sw">
+      <span class="sw-name"><a href="https://github.com/Hellod035/LeggedLabDeploy">LeggedLabDeploy</a></span>
+      <span class="sw-badges">
+        <img src="https://img.shields.io/github/stars/Hellod035/LeggedLabDeploy?style=social" alt="LeggedLabDeploy GitHub stars">
+      </span>
+      <p class="sw-desc">Companion sim-to-real deployment stack for LeggedLab: unitree_sdk2 communication, multi-mode state machine, remote control, and safety mechanisms for G1/H1.</p>
+    </div>
+
+    <p style="font-size:14px;color:var(--muted)">I also contribute to the <a href="https://github.com/isaac-sim/IsaacLab">NVIDIA Isaac Lab</a> ecosystem.</p>
+  </section>
+
+  <!-- ============ academic service ============ -->
+  <section id="service">
+    <h2>Academic Service</h2>
+    <p style="font-size:14.5px">
+      Reviewer for ICRA, IROS, T-RO, RSS, and CoRL.
+    </p>
+  </section>
+
+  <!-- ============ footer ============ -->
+  <footer>
+    <p>
+      <!-- TODO: one personal easter-egg line (hobby / fun fact) -->
+      Website layout inspired by <a href="https://jonbarron.info/">Jon Barron</a>'s
+      <a href="https://github.com/jonbarron/jonbarron_website">template</a>.
+      Last updated: August 2026.
+    </p>
+  </footer>
+
+</div>
+
+<script>
+  // All demo videos autoplay while visible: lazy-load on first sight,
+  // pause off-screen, and stay still if the user prefers reduced motion.
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) {
+          if (!v.src) v.src = v.dataset.src;
+          v.play().catch(function () {});
+        } else {
+          v.pause();
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('video[data-src]').forEach(function (v) { io.observe(v); });
+  }
+
+  // BibTeX toggles.
+  document.querySelectorAll('.bib-toggle').forEach(function (t) {
+    t.addEventListener('click', function () {
+      document.getElementById(t.dataset.bib).classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>

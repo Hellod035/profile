@@ -1,0 +1,315 @@
+/* Wandong (Jim) Sun — personal homepage
+   Layout inspired by jonbarron.info (with permission per its footer),
+   with additions: highlights video grid, news list, star badges. */
+
+:root {
+  --text: #1f1f1f;
+  --muted: #555;
+  --link: #1367a7;
+  --accent-bg: #ffffd0;      /* Barron-style highlight yellow */
+  --rule: #e5e5e5;
+  --badge-bg: #f2f2f2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- header ---------- */
+
+.header {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 12px 0 8px;
+}
+
+.header-text { flex: 1 1 auto; }
+
+.name {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 2px;
+}
+.name .zh {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--muted);
+  margin-left: 10px;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 0 0 14px;
+  font-size: 15px;
+}
+
+.bio p { margin: 0 0 10px; }
+
+.jobmarket {
+  font-style: italic;
+}
+
+.links {
+  margin-top: 14px;
+  font-size: 15px;
+}
+.links a { white-space: nowrap; }
+.links .sep { color: #bbb; padding: 0 6px; }
+
+.portrait {
+  flex: 0 0 172px;
+}
+.portrait img, .portrait svg {
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- sections ---------- */
+
+section { margin-top: 34px; }
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- highlights ---------- */
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 700px) {
+  .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+  .highlights-grid { grid-template-columns: 1fr; }
+}
+.highlight-card {
+  display: block;
+  color: inherit;
+}
+.highlight-card video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #000;
+  display: block;
+}
+.highlight-card figcaption {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 6px;
+  text-align: center;
+}
+.highlight-card:hover figcaption { color: var(--link); }
+.highlights-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ---------- news ---------- */
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.news-list li {
+  padding: 3px 0;
+  display: flex;
+  gap: 10px;
+}
+.news-date {
+  flex: 0 0 74px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.tag-new {
+  background: #c62828;
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-left: 6px;
+  vertical-align: 2px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- publications ---------- */
+
+.pub {
+  display: flex;
+  gap: 18px;
+  padding: 14px 12px;
+  border-radius: 8px;
+  margin: 0 -12px;
+}
+.pub.selected { background: var(--accent-bg); }
+
+.pub-thumb {
+  flex: 0 0 190px;
+  align-self: center;
+}
+.pub-thumb video, .pub-thumb img, .pub-thumb svg {
+  width: 190px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f0f0f0;
+  display: block;
+}
+
+.pub-body { flex: 1 1 auto; }
+
+.pub-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.pub-authors { margin: 2px 0; }
+.pub-authors .me { font-weight: 700; }
+
+.pub-venue { margin: 2px 0; }
+.venue-badge {
+  background: var(--badge-bg);
+  border-radius: 4px;
+  padding: 1px 7px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.award {
+  color: #b3261e;
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-left: 6px;
+}
+
+.pub-links { font-size: 14px; margin: 4px 0 6px; }
+.pub-links .sep { color: #bbb; padding: 0 4px; }
+
+.pub-tldr {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.legend {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 4px 0 12px;
+}
+.legend .hl {
+  background: var(--accent-bg);
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* bibtex toggle */
+.bib-toggle {
+  cursor: pointer;
+  color: var(--link);
+}
+.bibtex {
+  display: none;
+  background: #f7f7f7;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  font-size: 12.5px;
+  padding: 10px 12px;
+  margin-top: 8px;
+  overflow-x: auto;
+  white-space: pre;
+}
+.bibtex.open { display: block; }
+
+/* compact list for co-authored papers */
+.pub-compact {
+  margin: 0;
+  padding-left: 18px;
+}
+.pub-compact li { margin-bottom: 10px; font-size: 14.5px; }
+.pub-compact .me { font-weight: 700; }
+
+/* ---------- milestones ---------- */
+
+.milestone-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.milestone-list li { margin-bottom: 14px; }
+.milestone-list strong { font-size: 15.5px; }
+.ms-date {
+  color: var(--muted);
+  font-size: 13px;
+  margin-left: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.ms-desc { font-size: 14.5px; color: var(--muted); }
+
+/* ---------- software ---------- */
+
+.sw {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.sw-name { font-weight: 700; font-size: 16px; white-space: nowrap; }
+.sw-badges img { vertical-align: middle; }
+.sw-desc { flex: 1 1 100%; margin: 2px 0 0; font-size: 14.5px; }
+
+/* ---------- footer ---------- */
+
+footer {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 640px) {
+  .header { flex-direction: column-reverse; text-align: center; }
+  .portrait { flex-basis: auto; }
+  .pub { flex-direction: column; }
+  .pub-thumb, .pub-thumb video, .pub-thumb img { width: 100%; flex-basis: auto; }
+  .news-list li { flex-direction: column; gap: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .highlight-card video { display: none; }
+}
