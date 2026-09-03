@@ -108,6 +108,7 @@
       <li><span class="news-date">[02/2025]</span><span><a href="#pub-wmr"><em>World Model Reconstruction</em></a> for blind humanoid locomotion is on arXiv, including a 3.2&nbsp;km snowfield hike.</span></li>
       <!-- TODO: add HONOR Robotics joining date, invited talks, media coverage if any -->
     </ul>
+    <p class="news-toggle" hidden><a href="#news">Show all news</a></p>
   </section>
 
   <!-- ============ industry projects ============ -->
@@ -119,6 +120,7 @@
         <span class="pub-title">Human 100&nbsp;m, 400&nbsp;m and 1500&nbsp;m records broken at the 2026 World Humanoid Robot Games</span>
         <p class="pub-venue"><span class="venue-badge">Beijing · 08/2026</span></p>
         <p class="pub-tldr">At the 2026 World Humanoid Robot Games (666 teams from 16 countries), HONOR's humanoid robot <em>Lightning</em> broke the human world records for the 100&nbsp;m (8.94&nbsp;s), 400&nbsp;m (39.45&nbsp;s) and 1500&nbsp;m (2:30.22), reaching a top speed of 14.5&nbsp;m/s.</p>
+        <p class="pub-role">My role: I carried the locomotion framework from the half-marathon over to all three events, pushing a large humanoid to its speed limits.</p>
         <p class="pub-links">
           <a href="https://www.news.cn/sports/20260824/f6eaa13b7b434f2cb47134e34cb606ae/c.html">Xinhua</a><span class="sep">/</span>
           <a href="https://www.jiemian.com/article/14971204.html">Jiemian</a><span class="sep">/</span>
@@ -134,26 +136,13 @@
         <span class="pub-title">Champion of the 2026 Beijing E-Town Humanoid Robot Half-Marathon</span>
         <p class="pub-venue"><span class="venue-badge">Beijing · 04/2026</span></p>
         <p class="pub-tldr">HONOR's humanoid robot <em>Lightning</em> won the humanoid half-marathon: 21.0975&nbsp;km fully autonomously in a net 50:26, breaking the human half-marathon world record, with HONOR robots sweeping the top six places.</p>
+        <p class="pub-role">My role: I designed the unified locomotion training framework behind these runs, a planner-free end-to-end approach making its first appearance here.</p>
         <p class="pub-links">
           <a href="https://www.news.cn/sports/20260419/c91172da5ef84342b7b07fb3c2ef8f12/c.html">Xinhua</a><span class="sep">/</span>
           <a href="https://en.people.cn/n3/2026/0427/c98649-20450883.html">People's Daily</a><span class="sep">/</span>
           <a href="https://www.sixthtone.com/news/1018442/chinese-robot-runner-beats-mens-half-marathon-world-record">Sixth Tone</a><span class="sep">/</span>
           <a href="https://www.honor.com/cn/activity/honor-robot/">HONOR official page</a><span class="sep">/</span>
           <a href="https://www.bilibili.com/video/BV1MZd9BzEmF/">CCTV video</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-thumb"><img src="assets/images/mwc_dance.jpg" alt="HONOR humanoid robot dancing on the MWC 2026 stage"></div>
-      <div class="pub-body">
-        <span class="pub-title">HONOR's first humanoid robot unveiled at MWC 2026, Barcelona</span>
-        <p class="pub-venue"><span class="venue-badge">Barcelona · 03/2026</span></p>
-        <p class="pub-tldr">HONOR became the first smartphone maker to enter consumer humanoid robotics. On the MWC keynote stage the robot danced with human performers, moonwalked, backflipped, and runs at up to 4&nbsp;m/s.</p>
-        <p class="pub-links">
-          <a href="https://www3.xinhuanet.com/tech/20260305/46fa113683e448be86d610f3d2bad889/c.html">Xinhua</a><span class="sep">/</span>
-          <a href="https://interestingengineering.com/ai-robotics/honor-humanoid-robot-mwc">Interesting Engineering</a><span class="sep">/</span>
-          <a href="https://www.prnewswire.com/news-releases/honor-advances-its-ai-vision-at-mwc-2026-with-robot-phone-humanoid-robot-and-magic-v6-302701902.html">HONOR press release</a>
         </p>
       </div>
     </div>
@@ -166,6 +155,21 @@
         <p class="pub-tldr">Official HONOR film featuring perception-driven traversal of rubble, stairs, and obstacles, powered by the vision-based locomotion research behind <a href="#pub-nyst"><em>Now You See That</em></a>.</p>
         <p class="pub-links">
           <a href="https://www.bilibili.com/video/BV1ApcXzGEkP/">watch on Bilibili</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb"><img src="assets/images/mwc_dance.jpg" alt="HONOR humanoid robot dancing on the MWC 2026 stage"></div>
+      <div class="pub-body">
+        <span class="pub-title">HONOR's first humanoid robot unveiled at MWC 2026, Barcelona</span>
+        <p class="pub-venue"><span class="venue-badge">Barcelona · 03/2026</span></p>
+        <p class="pub-tldr">HONOR became the first smartphone maker to enter consumer humanoid robotics. On the MWC keynote stage the robot danced with human performers, moonwalked, backflipped, and runs at up to 4&nbsp;m/s.</p>
+        <p class="pub-role">My role: sim-to-real transfer of the backflip on a new-generation robot, taking its joint modules and electrical system into uncharted territory.</p>
+        <p class="pub-links">
+          <a href="https://www3.xinhuanet.com/tech/20260305/46fa113683e448be86d610f3d2bad889/c.html">Xinhua</a><span class="sep">/</span>
+          <a href="https://interestingengineering.com/ai-robotics/honor-humanoid-robot-mwc">Interesting Engineering</a><span class="sep">/</span>
+          <a href="https://www.prnewswire.com/news-releases/honor-advances-its-ai-vision-at-mwc-2026-with-robot-phone-humanoid-robot-and-magic-v6-302701902.html">HONOR press release</a>
         </p>
       </div>
     </div>
@@ -425,7 +429,7 @@
   <section id="service">
     <h2>Academic Service</h2>
     <p style="font-size:14.5px">
-      Reviewer for ICRA, IROS, T-RO, RSS, and CoRL.
+      Reviewer for ICRA, IROS, RSS, CoRL, T-RO, RA-L, and more.
     </p>
   </section>
 
@@ -459,6 +463,31 @@
     }, { threshold: 0.2 });
     document.querySelectorAll('video[data-src]').forEach(function (v) { io.observe(v); });
   }
+
+  // News list: collapse to the most recent entries, with a toggle. Built in
+  // JS so the full list stays visible when scripting is unavailable.
+  (function () {
+    var list = document.querySelector('.news-list');
+    var wrap = document.querySelector('.news-toggle');
+    if (!list || !wrap) return;
+    var items = Array.prototype.slice.call(list.querySelectorAll('li'));
+    var VISIBLE = 5;
+    if (items.length <= VISIBLE) return;
+    var extra = items.slice(VISIBLE);
+    var link = wrap.querySelector('a');
+    var open = false;
+    var apply = function () {
+      extra.forEach(function (li) { li.hidden = !open; });
+      link.textContent = open ? 'Show less' : 'Show all news';
+    };
+    wrap.hidden = false;
+    apply();
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      open = !open;
+      apply();
+    });
+  })();
 
   // Contact links copy their address instead of navigating; without clipboard
   // access they fall back to revealing it.
