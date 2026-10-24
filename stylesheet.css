@@ -188,6 +188,8 @@ h2 {
   display: block;
 }
 
+.pub-thumb img.benchmark-preview { aspect-ratio: auto; height: auto; }
+
 .pub-body { flex: 1 1 auto; }
 
 .pub-title {

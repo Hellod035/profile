@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wandong (Jim) Sun</title>
   <meta name="author" content="Wandong Sun">
-  <meta name="description" content="Wandong (Jim) Sun, PhD student at Harbin Institute of Technology working on humanoid locomotion, loco-manipulation, and robot learning. Author of LeggedLab.">
+  <meta name="description" content="Wandong (Jim) Sun, PhD student at Harbin Institute of Technology working on foundation model pretraining, humanoid locomotion, and loco-manipulation. Author of LeggedLab and MotionChallenge.">
   <link rel="stylesheet" href="stylesheet.css">
   <meta property="og:title" content="Wandong (Jim) Sun">
-  <meta property="og:description" content="Humanoid locomotion &amp; loco-manipulation · Robot learning">
+  <meta property="og:description" content="Foundation model pretraining · Humanoid locomotion &amp; loco-manipulation">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/wandong.jpg">
 </head>
@@ -19,7 +19,7 @@
   <div class="header">
     <div class="header-text">
       <h1 class="name">Wandong (Jim) Sun<span class="zh">孙万东</span></h1>
-      <p class="tagline">Humanoid locomotion &amp; loco-manipulation · Robot learning</p>
+      <p class="tagline">Foundation model pretraining · Humanoid locomotion &amp; loco-manipulation</p>
       <div class="bio">
         <p>
           I am a final-year PhD student at Harbin Institute of Technology,
@@ -27,15 +27,14 @@
           I make humanoid robots learn to walk, see, and work in the real world.
         </p>
         <p>
-          I am currently with the HONOR Robotics team as a core contributor to its
-          humanoid robots, which debuted at MWC 2026 in Barcelona, won the 2026 humanoid
-          half-marathon, and broke three human world records at the 2026 World Humanoid
-          Robot Games.
+          I previously worked on humanoid locomotion and sim-to-real deployment
+          at HONOR Robotics, contributing to the team's MWC 2026 debut and humanoid
+          racing projects.
         </p>
         <p>
-          I also created
-          <a href="#software">LeggedLab</a>, an open-source
-          RL workflow for legged robots.
+          I develop <a href="#software">LeggedLab</a> for legged-robot reinforcement learning
+          and <a href="https://motionchallenge-project.github.io/motionchallenge/">MotionChallenge</a>
+          for open, reproducible motion-tracking benchmarks.
         </p>
         <p class="jobmarket">
           Collaborations and conversations are warmly welcome.
@@ -93,6 +92,7 @@
   <section id="news">
     <h2>News</h2>
     <ul class="news-list">
+      <li><span class="news-date">[10/2026]</span><span><a href="https://motionchallenge-project.github.io/motionchallenge/">MotionChallenge</a> is now public: open, reproducible benchmarks and a leaderboard for humanoid motion tracking.</span></li>
       <!-- TODO: confirm exact months for entries marked below -->
       <li><span class="news-date">[08/2026]</span><span>HONOR's humanoid robot <em>Lightning</em> breaks the human 100&nbsp;m, 400&nbsp;m and 1500&nbsp;m world records at the <a href="#projects">2026 World Humanoid Robot Games</a>.</span></li>
       <li><span class="news-date">[04/2026]</span><span>HONOR's humanoid robot <em>Lightning</em> wins the <a href="#projects">2026 Beijing E-Town Humanoid Robot Half-Marathon</a>: 21&nbsp;km fully autonomous in 50:26, breaking the human half-marathon world record.</span></li>
@@ -114,6 +114,17 @@
   <!-- ============ publications ============ -->
   <section id="publications">
     <h2>Publications</h2>
+
+    <!-- ---- MotionChallenge ---- -->
+    <div class="pub" id="pub-motionchallenge">
+      <div class="pub-thumb"><a href="assets/images/motionchallenge-leaderboard.png"><img class="benchmark-preview" src="assets/images/motionchallenge-leaderboard.png" alt="MotionChallenge leaderboard showing motion-tracking results" loading="lazy"></a></div>
+      <div class="pub-body">
+        <a class="pub-title" href="https://motionchallenge-project.github.io/motionchallenge/">MotionChallenge: An Open Benchmark for Humanoid Motion Tracking</a>
+        <p class="pub-authors">MotionChallenge Team</p>
+        <p class="pub-links"><a href="https://motionchallenge-project.github.io/motionchallenge/">website &amp; leaderboard</a><span class="sep">/</span><a href="https://github.com/MotionChallenge-Project">code</a></p>
+        <p class="pub-tldr">An open benchmark platform for humanoid motion tracking, with shared evaluation rules, reproducible model adapters, and a public leaderboard.</p>
+      </div>
+    </div>
 
     <!-- ---- EATR-Stereo ---- -->
     <div class="pub">
@@ -439,7 +450,7 @@
       <!-- TODO: one personal easter-egg line (hobby / fun fact) -->
       Website layout inspired by <a href="https://jonbarron.info/">Jon Barron</a>'s
       <a href="https://github.com/jonbarron/jonbarron_website">template</a>.
-      Last updated: August 2026.
+      Last updated: October 2026.
     </p>
   </footer>
 
